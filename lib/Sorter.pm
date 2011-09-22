@@ -16,6 +16,8 @@ sub new {
 sub set_values {
  my $self = shift();
 
+ $self->{values} = [];
+
  foreach my $value (@_) {
   push @{$self->{values}}, $value;
  }
