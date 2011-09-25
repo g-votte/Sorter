@@ -3,6 +3,7 @@ use warnings;
 
 package Sorter;
 
+#コンストラクタ
 sub new {
  my $class = shift();
 
@@ -13,6 +14,7 @@ sub new {
  return bless $self, $class;
 }
 
+#set_values(values) 数列valuesをソート器に格納する
 sub set_values {
  my $self = shift();
 
@@ -23,13 +25,16 @@ sub set_values {
  }
 }
 
+#get_values(values) 格納された数列を返す
 sub get_values {
  my $self = shift();
 
  return @{$self->{values}};
 }
 
+#sort() 格納された数列をソートする
 sub sort {
+ #quick_sort(values) 数列valuesをクイックソート
  sub quick_sort {
   my @values = @{shift()};
 

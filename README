@@ -1,1 +1,17 @@
-Implement your Sorter.pm
+[ファイルについて]
+ Listリポジトリには以下のファイルが含まれる．
+  ・lib/Sorter.pm
+  ・t/sort.t
+
+[Sorterについて]
+ lib/Sorter.pmではソート器クラスSorterを定義している．
+ 以下，Sorterのデータメンバとメソッドについて述べる．
+  - Sorterのデータメンバ
+        values  ソート器が格納している数列
+
+  - Sorterのメソッド
+        書式 : 説明 : 返り値
+	set_values(values) : 数列valuesをソート器に格納する : なし
+	get_values(values) : 格納された数列を返す : 格納された数の配列
+	sort() : 格納された数列をソートする : なし
+
